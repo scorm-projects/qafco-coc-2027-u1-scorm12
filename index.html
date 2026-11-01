@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QAFCO Code of Conduct 2027 — Unit 1</title>
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/slides.css" />
+  <link rel="stylesheet" href="css/s5.css" />
+  <link rel="stylesheet" href="css/s6.css" />
+</head>
+<body>
+  <div class="viewport">
+    <div class="stage" id="stage">
+
+      <div class="chrome">
+        <span class="tag"><img src="assets/qafco-logo.webp" alt="QAFCO" width="1000" height="593" /></span>
+        <div><div class="chrome__course" data-t="course"></div><div class="chrome__where" data-t="where"></div></div>
+        <span class="chrome__spacer"></span>
+        <button type="button" class="menu-btn" id="menu-btn" hidden><svg data-icon="ListBullets-bold"></svg><span data-t="menu"></span></button>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">English</button>
+          <button type="button" data-lang="ar" aria-pressed="false">عربي</button>
+        </div>
+      </div>
+
+      <!-- ══ Welcome ══ -->
+      <section class="screen is-on" id="welcome" aria-labelledby="w-title">
+        <div class="w-art abs" id="w-art" aria-hidden="true" style="inset-inline-end:40px; top:100px; width:840px; height:760px">
+          <div class="halftone abs a-pop" style="inset-inline-end:10px; top:0; width:260px; height:260px"></div>
+          <div class="torn abs a-tear" style="inset-inline-start:120px; top:40px; width:640px; height:390px; transform:rotate(2deg)">
+            <span class="tape" style="top:-14px; inset-inline-start:46%"></span>
+            <img src="assets/plant/qafco-aerial.webp" alt="" style="width:100%;height:100%" /><span class="tint" style="background:rgba(0,169,196,.35)"></span>
+          </div>
+          <div class="grid abs a-pop" style="inset-inline-start:30px; top:470px; width:330px; height:220px; transform:rotate(-3deg)"></div>
+          <svg class="leafshape abs a-rise" data-leaf="green" style="inset-inline-start:410px; top:300px; width:400px; height:440px" viewBox="0 0 400 440"></svg>
+          <img class="sticker--warm abs a-rise" src="assets/plant/urea-towers.webp" alt="" style="inset-inline-start:60px; top:300px; height:300px; width:auto" />
+          <img class="sticker abs a-rise" src="assets/people/khalid-front.webp" alt="" style="inset-inline-start:500px; top:180px; height:580px; width:auto" />
+          <div class="portrait abs a-pop" style="inset-inline-start:60px; top:560px; width:170px; height:170px; border-color:var(--yellow); z-index:3"><img src="assets/people/maryam-front.webp" alt="" /></div>
+          <div class="portrait abs a-pop" style="inset-inline-start:40px; top:90px; width:150px; height:150px; border-color:var(--teal); z-index:3"><img src="assets/people/arjun-front.webp" alt="" /></div>
+          <svg class="doodle abs a-draw" style="inset-inline-start:250px; top:640px; width:200px; height:90px; z-index:3" viewBox="0 0 200 90"><path d="M10 60 C 60 10, 120 10, 180 40 M152 18 L182 40 L156 64" /></svg>
+        </div>
+
+        <div class="w-copy">
+          <p class="eyebrow a-fade" data-t="eyebrow"></p>
+          <h1 class="label w-title a-slide" id="w-title"></h1>
+          <p class="w-lead a-fade" data-t="lead"></p>
+          <ol class="journey a-fade" id="journey"></ol>
+          <ul class="meta a-fade" id="meta"></ul>
+          <button type="button" class="cta a-fade" id="start"><span data-t="start"></span><svg data-icon="ArrowRight-bold"></svg></button>
+        </div>
+      </section>
+
+      <!-- ══ Lesson: QAFCO's Business Principles ══ -->
+      <section class="screen" id="s3" aria-labelledby="l-title">
+        <div class="l-head">
+          <div class="chips">
+            <span class="chip"><svg data-icon="BookOpenText-bold"></svg><span data-t="topic"></span></span>
+            <span class="chip chip--teal"><svg data-icon="Sparkle-bold"></svg><span data-t="interactive"></span></span>
+          </div>
+          <h1 class="label l-title" id="l-title"></h1>
+        </div>
+        <div class="steps" aria-hidden="true"><span id="st1" class="on">1</span><span id="st2">2</span></div>
+
+        <!-- Step 1: watch -->
+        <div class="step is-on" id="step1">
+          <div class="intro-card"><span class="tape"></span><span data-t="intro"></span></div>
+          <div class="player" id="player">
+            <span class="tape"></span>
+            <video id="film" playsinline preload="auto"></video>
+            <button type="button" class="player__play"><span><i><svg data-icon="Play-bold"></svg></i><b data-t="sceneplay"></b></span></button>
+          </div>
+        </div>
+
+        <!-- Step 2: explore -->
+        <div class="step" id="step2">
+          <div class="explore-bar">
+            <h2><svg data-icon="Sparkle-duotone"></svg><span data-t="explore"></span></h2>
+            <div class="ring" aria-live="polite">
+              <svg viewBox="0 0 52 52"><circle class="bg" cx="26" cy="26" r="21" /><circle class="fg" id="ring-fg" cx="26" cy="26" r="21" /></svg>
+              <b id="ring-n">0</b><span data-t="revealed"></span>
+            </div>
+          </div>
+          <div class="tiles" id="tiles"></div>
+          <div class="sheet" id="sheet" role="dialog" aria-labelledby="sheet-name">
+            <div class="sheet__art" id="sheet-art"><div class="pscene" id="pscene"></div></div>
+            <div class="sheet__body">
+              <div class="sheet__top">
+                <span class="tile__leaf" id="sheet-icon"></span>
+                <span class="sheet__num" id="sheet-num"></span>
+                <button type="button" class="sheet__close" id="sheet-close" aria-label="Close"><svg data-icon="X-bold"></svg></button>
+              </div>
+              <h3 class="sheet__name" id="sheet-name"></h3>
+              <p class="sheet__text" id="sheet-text"></p>
+              <span class="chip sheet__tag" id="sheet-tag"></span>
+              <div class="example"><h4><svg data-icon="ChatsCircle-bold"></svg><span data-t="example"></span></h4><p id="sheet-example"></p></div>
+              <div class="sheet__foot">
+                <span class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span class="sheet__status" id="sheet-status"></span>
+                <div class="sheet__nav">
+                  <button type="button" id="sheet-prev" aria-label="Previous principle"><svg data-icon="ArrowLeft-bold"></svg></button>
+                  <button type="button" id="sheet-next" aria-label="Next principle"><svg data-icon="ArrowRight-bold"></svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- the other Unit 1 screens are built by their own modules (js/slides/*.js) -->
+      <section class="screen" id="cover" aria-label="Unit 1"></section>
+      <section class="screen" id="s2" aria-label="Topic 1"></section>
+      <section class="screen" id="s4" aria-label="Topic 3"></section>
+      <section class="screen" id="s5" aria-label="Topic 4"></section>
+      <section class="screen" id="s6" aria-label="Knowledge Check"></section>
+
+      <nav class="navbar" aria-label="Slide navigation">
+        <span class="navbar__hint" id="hint"><svg data-icon="LockSimple-bold"></svg><span id="hint-text"></span></span>
+        <span class="navbar__spacer"></span>
+        <button type="button" class="navbtn" id="prev"><svg data-icon="ArrowLeft-bold"></svg><span data-t="prev"></span></button>
+        <button type="button" class="navbtn navbtn--next" id="next" aria-disabled="true"><span data-t="next"></span><svg data-icon="ArrowRight-bold"></svg></button>
+      </nav>
+      <!-- topic menu -->
+      <div class="topics" id="topics" hidden><div class="topics__panel"><div class="topics__head"><b data-t="topicsTitle"></b><button type="button" class="topics__close" id="topics-close" aria-label="Close"><svg data-icon="X-bold"></svg></button></div><ol id="topics-list"></ol></div></div>
+    </div>
+  </div>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="js/scorm.js"></script>
+  <script src="content/u1.js"></script>
+  <script src="js/paths.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/slides/cover.js"></script>
+  <script src="js/slides/s3.js"></script>
+  <script src="js/slides/s2.js"></script>
+  <script src="js/slides/s4.js"></script>
+  <script src="js/slides/s5.js"></script>
+  <script src="js/slides/s6.js"></script>
+</body>
+</html>
